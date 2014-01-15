@@ -1,0 +1,19 @@
+Now, answer these questions:
+
+What is Sinatra? Where does it run?
+	- Sinatra is a web application development framework that lets you create and deploy web applications quickly. It runs on the web server.
+
+What is a Gemfile? How do you use it in your Sinatra Application? Give step by step instructions.
+	- A Gemfile is where all the gems (ruby scripts) that the web application is depended on. You use it by running 'bundle install' in your command line which installs all the gems from the Gemfile (depending on the environment). You also need to include "require 'bundler'"" and "Bundler.require" in your app.rb file so you can actually use those gems in your program.
+
+What is an ORM? What are the basic features of an ORM? Why is it helpful?
+	- ORM stands for Object Relational Mapper and its a way to talk to a SQL database using Ruby syntax rather than SQL. It's helpful for developers because we can think of are objects as rows in a database and a class as the table itself ths making it easier to develop with. It also defines alot of the queries for use through methods so we don't have to define the query syntax ourselves each time.
+
+What is the public folder? What do we use it for?
+	- The public folder is where we keep static assets. Things like the CSS files and images. 
+
+What is REST? Why is it useful?
+ - REST is a web development convention where the routes have an agreed upon semantic meaning. It's useful for user because they can usually guess what a URL would be for a particular section of an app.
+
+Suppose I, with my browser, send an HTTP get request to the route that will render the view of all the SpaceCats. Walk me through step by step how your application handles that request.
+	- Sinatra will first try to match up the HTTP verb/request (get) with the route (/spacecats) in the app.rb file. Once it finds that combination it will run all the code in that block, which consists of grabbing all the spacecats from the model and storing them in an instance variable. The Instance variable can then be used in the view specified at the end of the block. Once the view is preprocessed, the HTML is sent back to the browser as a response and then rendered onthe viewport.
