@@ -13,4 +13,5 @@ gem "dm-sqlite-adapter"
 group :development do
   gem "shotgun"
   gem "tux"
+  gem "debugger"
 end

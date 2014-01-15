@@ -22,6 +22,7 @@ GEM
     bcrypt-ruby (3.1.2)
     bond (0.4.3)
     builder (3.1.4)
+    columnize (0.3.6)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
@@ -34,6 +35,12 @@ GEM
       dm-validations (~> 1.2.0)
     data_objects (0.10.13)
       addressable (~> 2.1)
+    debugger (1.6.3)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.4)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.4)
     dm-aggregates (1.2.0)
       dm-core (~> 1.2.0)
     dm-constraints (1.2.0)
@@ -118,6 +125,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   data_mapper
+  debugger
   dm-sqlite-adapter
   rake
   shotgun
