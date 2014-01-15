@@ -1,0 +1,10 @@
+<h1>All dem SpaceCats</h1>
+<% @spacecats.each do |sc| %>
+	<img src="http://placekitten.com/200/200" />
+	<ul>
+		<li><%= sc.name %></li>
+		<li><%= sc.home_planet %></li>
+		<li><%= sc.tagline %></li>
+		<li><%= sc.superpower %></li>
+	</ul>
+	<% end %>
